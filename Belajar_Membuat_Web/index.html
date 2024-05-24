@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurusan TKJ - PPDB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Jurusan Teknik Komputer dan Jaringan</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showContent('home')">Home</a></li>
+                <li><a href="#" onclick="showContent('about')">Tentang Kami</a></li>
+                <li><a href="#" onclick="showContent('programs')">Program</a></li>
+                <li><a href="#" onclick="showContent('teachers')">Profil Guru</a></li>
+                <li><a href="#" onclick="showContent('contact')">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Selamat Datang di Jurusan TKJ</h2>
+            <p>Jurusan TKJ mempersiapkan siswa untuk menghadapi dunia kerja dengan keterampilan di bidang teknologi informasi dan jaringan.</p>
+        </section>
+        <section id="about" class="hidden">
+            <h2>Tentang Kami</h2>
+            <p>Jurusan TKJ mempersiapkan siswa untuk menghadapi dunia kerja dengan keterampilan di bidang teknologi informasi dan jaringan.</p>
+        </section>
+        <section id="programs" class="hidden">
+            <h2>Program Kami</h2>
+            <div class="program">
+                <h3>Jaringan Komputer</h3>
+                <p>Belajar tentang dasar-dasar jaringan komputer dan cara mengelola jaringan skala kecil hingga besar.</p>
+            </div>
+            <div class="program">
+                <h3>Pemrograman</h3>
+                <p>Mengajarkan berbagai bahasa pemrograman seperti Python, JavaScript, dan lainnya.</p>
+            </div>
+        </section>
+        <section id="teachers" class="hidden">
+            <h2>Profil Guru</h2>
+            <div class="teacher">
+                <img src="guru1.jpg" alt="Guru 1">
+                <h3>Nama Guru 1</h3>
+                <p>Spesialisasi: Jaringan Komputer</p>
+            </div>
+            <div class="teacher">
+                <img src="guru2.jpg" alt="Guru 2">
+                <h3>Nama Guru 2</h3>
+                <p>Spesialisasi: Pemrograman</p>
+            </div>
+        </section>
+        <section id="contact" class="hidden">
+            <h2>Kontak Kami</h2>
+            <form id="contact-form">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Jurusan TKJ. Semua Hak Dilindungi.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
